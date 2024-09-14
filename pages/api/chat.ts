@@ -7,7 +7,7 @@ const pdfParse = require('pdf-parse');
 // Initialize OpenAI API client
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY; // Ensure you handle undefined values
+    apiKey: process.env.OPENAI_API_KEY // Ensure you handle undefined values
 
 });
 
