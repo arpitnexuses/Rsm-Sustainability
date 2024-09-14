@@ -1,9 +1,9 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import fs from 'fs';
 import path from 'path';
-import pdfParse from 'pdf-parse'; // For parsing PDF files
 import OpenAI from 'openai'; // Updated import statement
 
+const pdfParse = require('pdf-parse');
 // Initialize OpenAI API client
 const openai = new OpenAI({
   apiKey: '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'
