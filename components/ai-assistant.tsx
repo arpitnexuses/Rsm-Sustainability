@@ -83,13 +83,7 @@ export function AiAssistant() {
   }
 
   const refreshPrompts = () => {
-    setPrompts([
-      { icon: <User className="w-6 h-6" />, text: "Download Newsletter" },
-      { icon: <Mail className="w-6 h-6" />, text: "Book an Appointment with RSM Team" },
-      { icon: <FileText className="w-6 h-6" />, text: "Summary of Newsletter" },
-      { icon: <Cpu className="w-6 h-6" />, text: "About Tax Retention" },
-    ]);
-    setChatHistory(prev => prev.filter(msg => msg.role === 'system' || msg.role === 'assistant'));
+    setChatHistory(prev => prev.filter(message => message.role === 'system'));
   }
 
   return (
