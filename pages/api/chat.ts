@@ -38,7 +38,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const response = await openai.chat.completions.create({
       model: 'gpt-3.5-turbo',
       messages: updatedMessages,
-      max_tokens: 25,
+      max_tokens: 100,
       top_p: 0.9,
     });
 
