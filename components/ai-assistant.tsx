@@ -153,9 +153,9 @@ export function AiAssistant() {
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
-                <Button variant="ghost" size="icon" className="h-8 w-8">
+{/*                 <Button variant="ghost" size="icon" className="h-8 w-8">
                   <Paperclip className="h-4 w-4 text-gray-400" />
-                </Button>
+                </Button> */}
               </TooltipTrigger>
               <TooltipContent>
                 <p>Add Attachment</p>
@@ -165,9 +165,9 @@ export function AiAssistant() {
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
-                <Button variant="ghost" size="icon" className="h-8 w-8">
+{/*                 <Button variant="ghost" size="icon" className="h-8 w-8">
                   <ImageIcon className="h-4 w-4 text-gray-400" />
-                </Button>
+                </Button> */}
               </TooltipTrigger>
               <TooltipContent>
                 <p>Use Image</p>
