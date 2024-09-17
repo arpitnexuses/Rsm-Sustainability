@@ -31,7 +31,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     // Step 2: Construct the messages for OpenAI
     const systemMessage = { role: 'system', content: 'You are a helpful assistant.' };
-    const userMessage = { role: 'user', content: `${fileText}\n${inputValue}` };
+const userMessage = { role: 'user', content: `Summarize the following content in less than 300 tokens:\n${fileText}\n${inputValue}` };
+
     const updatedMessages = [systemMessage, ...messages, userMessage];
 
     // Step 3: Send the messages to OpenAI for a response
