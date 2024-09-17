@@ -91,9 +91,9 @@ export function AiAssistant() {
       {/* Header Section with Text on Left and Logo on Right */}
       <div className="flex justify-between items-center"> {/* Flex container to align items horizontally */}
         <div>
-          <h1 className="text-4xl font-bold">
-            Hi Dear, <span className="text-[#3F9C35]">Reader</span>
-          </h1>
+          <h1 className="text-4xl font-bold text-[#000000]">
+  Hi Dear, <span className="text-[#3F9C35]">Reader</span>
+</h1>
           <h2 className="text-3xl font-semibold text-[#3F9C35]">What would you like to know?</h2>
           <p className="text-gray-500">Use one of the most common prompts below or use your own to begin</p>
         </div>
@@ -147,7 +147,7 @@ export function AiAssistant() {
           placeholder="Ask whatever you want..."
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
-          className="pr-32 pl-4 py-6 rounded-lg"
+          className="pr-32 pl-4 py-6 rounded-lg bg-gray-100 dark:bg-black-700 dark:text-black-200 text-[#000000]"
         />
         <div className="absolute inset-y-0 right-0 flex items-center pr-3 space-x-2">
           <TooltipProvider>
